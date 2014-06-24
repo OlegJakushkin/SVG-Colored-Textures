@@ -1,8 +1,10 @@
 SVG-Colored-Textures
 ====================
-SVG-Colored-Textures is a collection of textures and color filters. We have many color options in D3 ([choropleth example][1]). Colors have a standart. Yet we have no such standart for textures with no plane color. This collection of SVG defs and simple js helpers was made to simplify this problem. **153 color**s, **18 textures** == 2754 different combinations!
+SVG-Colored-Textures is a collection of textures and color filters. We have many color options in D3 ([choropleth example][1]). Colors have a standart. Yet we have no such standart for textures with no plane color. This collection of SVG defs and simple js helpers was made to simplify this problem. **153 color**s, **18 textures** == **2754 different combinations**!
 
-Current problems
+![poster][2]
+
+Solved D3/SVG problems
 --------------
 We `fill` objects with color. So fill style field is used. To apply a texture we would need to `fill` object with so called svg pattern. Therefore, we will have no place for colorization. 
 
@@ -30,6 +32,12 @@ Now you can create SVG with color and pattern like this:
 ```
 
 ###Usage in D3
+Let's create a simple circle with texture and color like this one:
+![enter image description here][3]
+
+or this:
+
+![enter image description here][4]
 
 Copy svg source into your application body:
 ```
@@ -42,7 +50,7 @@ Include D3 and SVG-Colored-Textures helper file:
 ```
 
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="../SVG-Colored-Textures.js" charset="utf-8"></script>
+    <script src="https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/bin/SVG-Colored-Textures.js" charset="utf-8"></script>
 
 ```
 Set fill and pattern from D3 code:
@@ -65,8 +73,10 @@ Set fill and pattern from D3 code:
     				.attr("filter",  colorsProvider.getRandomColorFilterId());
 
 ```
+And we shall get something like this:
+![enter image description here][5]
 
-Example:
+Example source:
 ```
 
     <!DOCTYPE html>
@@ -82,7 +92,7 @@ Example:
     <div id="example"/>
     
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="../SVG-Colored-Textures.js" charset="utf-8"></script>
+    <script src="https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/bin/SVG-Colored-Textures.js" charset="utf-8"></script>
     <script>
     var width = 960,
         height = 500;
@@ -109,7 +119,19 @@ Example:
 
 ```
 
+Other screenshots
+=================
+
+![enter image description here][6]
+![enter image description here][7]
+![enter image description here][8]
 
 
-
-  [1]: http://mbostock.github.io/d3/talk/20111018/choropleth.html 
+  [1]: http://mbostock.github.io/d3/talk/20111018/choropleth.html
+  [2]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/7.PNG
+  [3]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/1.PNG
+  [4]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/2.PNG
+  [5]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/3.PNG
+  [6]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/6.PNG
+  [7]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/5.PNG
+  [8]: https://raw.githubusercontent.com/OlegJakushkin/SVG-Colored-Textures/master/screenshots/4.PNG
